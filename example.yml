@@ -1,0 +1,10 @@
+name: GitHub Classroom Workflow
+
+on:
+    push:
+  
+jobs:
+  build:
+    uses: QA-Fullstack-SDET/workflow/.github/workflows/workflow.yml@main
+    with:
+      test_repo: github.com/QA-Fullstack-SDET/blc_<номер задания>_test
